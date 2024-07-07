@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pharmacy</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pharmacy</h1>
+    </header>
+    <!-- Usage of nav, ul and li tags -->
+
+    <nav class="navigation-bar">
+      <ul id="main-menu" class="menu-items">
+        <li>
+          <a href="./pharmacy-home.html">Home</a>
+        </li>
+
+        <li id="main-menu-item-3">
+          <a href="#">Our Medicines</a>
+
+          <!-- Add Sub-Menu-2 -->
+
+          <ul id="sub-menu-2" class="menu-items">
+            <li>
+              <a href="#">Fever</a>
+            </li>
+
+            <li>
+              <a href="#">Muscle Pains</a>
+            </li>
+
+            <li>
+              <a href="#">Cough and Cold</a>
+            </li>
+          </ul>
+        </li>
+
+        <li id="main-menu-item-2">
+          <a href="#">Health Care</a>
+
+          <!-- Add the Sub-Menu -->
+
+          <ul id="sub-menu" class="menu-items">
+            <li>
+              <a href="#">Baby Care</a>
+            </li>
+
+            <li>
+              <a href="#">Skin Care</a>
+            </li>
+
+            <li>
+              <a href="#">Home Care</a>
+            </li>
+
+            <li>
+              <a href="#">Personal Care</a>
+            </li>
+            <li>
+              <a href="#">Pet Care</a>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">Lab Test</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="main-content">
+      <div class="form-container">
+        <div class="form-div">
+          <form id="patientForm">
+            <h3>1. Your Contact Details</h3>
+            <div class="input-divs">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="fullname"
+                  required
+                  placeholder="Full Name"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="patient-id"
+                  placeholder="Patient Id(If exists)"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="contact"
+                  required
+                  placeholder="Contact Number"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="email-id"
+                  required
+                  placeholder="Email Id"
+                />
+              </div>
+            </div>
+            <h3>2. Your Address</h3>
+            <div class="input-divs">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="house-number"
+                  required
+                  placeholder="House Number"
+                />
+              </div>
+              <div class="form-group">
+                <input type="text" id="street" required placeholder="Street" />
+              </div>
+              <div class="form-group">
+                <input type="text" id="area" required placeholder="Area" />
+              </div>
+              <div class="select-box-div">
+                <p>District</p>
+                <select class="form-control" required id="inputDistrict">
+                  <option>Choose District</option>
+                  <option value="Anantapur">Anantapur</option>
+                  <option value="Chittoor">Chittoor</option>
+                  <option value="East Godavari">East Godavari</option>
+                  <option value="Guntur">Guntur</option>
+                  <option value="Kadapa">Kadapa</option>
+                  <option value="Krishna">Krishna</option>
+                  <option value="Kurnool">Kurnool</option>
+                  <option value="Prakasam">Prakasam</option>
+                  <option value="Nellore">Nellore</option>
+                  <option value="Srikakulam">Srikakulam</option>
+                  <option value="Visakhapatnam">Visakhapatnam</option>
+                  <option value="Vizianagaram">Vizianagaram</option>
+                  <option value="West Godavari">West Godavari</option>
+                </select>
+              </div>
+            </div>
+
+            <h3>3. Choose the Test Type</h3>
+            <div class="input-divs">
+              <div class="form-group-checkbox">
+                <label>
+                  <input type="checkbox" name="test-type" id="cbc" /> CBC
+                </label>
+              </div>
+              <div class="form-group-checkbox">
+                <label
+                  ><input type="checkbox" name="test-type" id="urine" />
+                  Complete Urine</label
+                >
+              </div>
+              <div class="form-group-checkbox">
+                <label
+                  ><input type="checkbox" name="test-type" id="lipid" /> Lipid
+                  Profile</label
+                >
+              </div>
+              <div class="form-group-checkbox">
+                <label
+                  ><input type="checkbox" name="test-type" id="tsh" />Thyroid
+                  Stimulating Hormone(TSH)</label
+                >
+              </div>
+              <div class="form-group-checkbox">
+                <label
+                  ><input
+                    type="checkbox"
+                    name="test-type"
+                    id="glucose"
+                  />Glucose Test</label
+                >
+              </div>
+            </div>
+
+            <h3>4. Do you want a hard copy of the report also?</h3>
+            <div class="form-group-radio">
+              <label
+                ><input type="radio" name="hard-copy" value="yes" />
+                Yes</label
+              >
+              <label
+                ><input type="radio" name="hard-copy" value="no" /> No</label
+              >
+            </div>
+
+            <h3>5. Select Your Comfortable Date and Time</h3>
+            <div class="input-divs">
+              <div class="form-group-date">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group-date">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="image-div">
+          <img src="./Images/Lab-Test/lab-test.jpg" />
+        </div>
+      </div>
+      <div class="form-buttons">
+        <button type="reset" id="reset-btn">Reset</button>
+        <button type="submit" id="submit-btn">Submit</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; Copyright. Only for demonstration purposes</p>
+    </footer>
+
+    <script src="./pharmacy.js"></script>
+  </body>
+</html>
